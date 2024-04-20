@@ -7,7 +7,16 @@
 	text-align: center;
 }
 
+h2, h3 {
+	color: #00cc66;
+	}
 
+pre {
+  font-size:16px;
+  display: block;
+  font-family: monospace;
+  background-color:#eee;
+  }
 
 ul {
   list-style-type: none;

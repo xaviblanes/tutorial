@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linkem amb els estils -->
+    <link rel="stylesheet" href="css/estil.css">
+</head>
+
+<body>
+<h1 class="cap">
+Tutorial CSS (DAW-llm)
+</h1>
+
+<ul>
+  <li><a href="display.html">Display</a></li>
+  <li><a href="position.html">Position</a></li>
+  <li><a href="z-index.html">Z-index</a></li>
+  <li><a href="overflow.html">Overflow</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Float and clear</a>
+    <div class="dropdown-content">
+      <a href="float.html">Float</a>
+      <a href="clear.html">Clear</a>
+      <a href="examples.html">Float examples</a>
+    </div>
+   </li>
+   <li><a href="inline.html">Display: inline-block</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Others</a>
+    <div class="dropdown-content">
+      <a href="combinators.html">Combinators</a>
+      <a href="p-classes.html">Pseudo-classes</a>
+      <a href="p-elements.html">Pseudo-elements</a>
+    </div>
+   </li>
+</ul>
+
+<h2>CSS Layout - The display Property</h2><hr>
+<p>The display property is the most important CSS property for controlling layout. The display property is used to specify how an element is shown on a web page.</p>
+
+<p>Every HTML element has a default display value, depending on what type of element it is. The default display value for most elements is block or inline.</p>
+
+<p>The display property is used to change the default display behavior of HTML elements.
+<h3>Block-level Elements</h3>
+
+<p>A block-level element ALWAYS starts on a new line and takes up the full width available (stretches out to the left and right as far as it can). The <div> element is a block-level element.</p>
+
+<p>Examples of block-level elements:</p>
+    <pre>
+    
+    div
+    h1 - h6
+    p
+    form
+    header
+    footer
+    section
+    </pre>
+
+<h3>Inline Elements</h3>
+
+<p>An inline element DOES NOT start on a new line and only takes up as much width as necessary. Examples of inline elements:</p>
+
+<pre>
+ 
+    span
+    a
+    img
+
+</pre>
+
+<h3>Display: none;</h3>
+
+<p>display: none; is commonly used with JavaScript to hide and show elements without deleting and recreating them. Take a look at our last example on this page if you want to know how this can be achieved. The script element uses display: none; as default.</p>
+
+<h3>Override The Default Display Value</h3>
+
+<p>As mentioned, every element has a default display value. However, you can override this. Changing an inline element to a block element, or vice versa, can be useful for making the page look a specific way, and still follow the web standards.</p>
+
+<p>A common example is making inline li elements for horizontal menus:</p>
+<pre>
+ 
+    li {
+        display: inline;
+    }
+
+</pre>
+
+<p>The following example displays span elements as block elements:
+<<pre>
+
+    span {
+        display: block;
+    }
+
+</pre>
+
+<h3>Hide an Element - display:none or visibility:hidden?</h3>
+
+<p>Hiding an element can be done by setting the display property to none. The element will be hidden, and the page will be displayed as if the element is not there:</p>
+<pre>
+
+    h1.hidden {
+        display: none;
+    }
+
+</pre>
+
+<div class="peu">
+<hr>
+Xavi Blanes 2024 (cc)<br>
+Per a DAW-llm
+
+</body>
+</html>
+
+
+
