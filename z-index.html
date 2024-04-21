@@ -36,7 +36,79 @@ Tutorial CSS (DAW-llm)
    </li>
 </ul>
 
-<h2></h2><hr>
+<h2>CSS Layout - The z-index Property</h2><hr>
+
+<p>The z-index property specifies the stack order of an element. When elements are positioned, they can overlap other elements. The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others).</p>
+
+<p>An element can have a positive or negative stack order. Example:
+<pre>
+
+    img {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: -1;
+    }
+
+</pre>
+
+<h3>Another z-index Example</h3>
+
+<p>Example: Here we see that an element with greater stack order is always above an element with a lower stack order</p>
+<pre>
+
+    &lt;html&gt;
+        &lt;head&gt;
+        &lt;style&gt;
+        .container {
+        position: relative;
+        }
+
+        .black-box {
+            position: relative;
+            z-index: 1;
+            border: 2px solid black;
+            height: 100px;
+            margin: 30px;
+        }
+
+        .gray-box {
+            position: absolute;
+            z-index: 3;
+            background: lightgray;
+            height: 60px;
+            width: 70%;
+            left: 50px;
+            top: 50px;
+        }
+
+        .green-box {
+            position: absolute;
+            z-index: 2;
+            background: lightgreen;
+            width: 35%;
+            left: 270px;
+            top: -15px;
+            height: 100px;
+        }
+        &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+
+        &lt;div class="container"&gt;
+        &lt;div class="black-box">Black box&lt;/div&gt;
+        &lt;div class="gray-box">Gray box&lt;/div&gt;
+        &lt;div class="green-box">Green box&lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;/body&gt;
+    &lt;/html&gt;
+    
+</pre>
+
+<h3>Without z-index</h3>
+
+<p>If two positioned elements overlap each other without a z-index specified, the element defined last in the HTML code will be shown on top.</p>
 
 <div class="peu">
 <hr>

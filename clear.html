@@ -36,7 +36,21 @@ Tutorial CSS (DAW-llm)
    </li>
 </ul>
 
-<h2></h2><hr>
+<h2>CSS Layout - clear and clearfix</h2><hr>
+<p>When we use the float property, and we want the next element below (not on right or left), we will have to use the clear property. The clear property specifies what should happen with the element that is next to a floating element. The clear property can have one of the following values:</p>
+<pre>
+
+    none - The element is not pushed below left or right floated elements. This is default
+    left - The element is pushed below left floated elements
+    right - The element is pushed below right floated elements
+    both - The element is pushed below both left and right floated elements
+    inherit - The element inherits the clear value from its parent
+    
+</pre>
+
+<h3>The clearfix Hack</h3>
+
+<p>If a floated element is taller than the containing element, it will "overflow" outside of its container. We can then add a clearfix hack to solve this problem</p>
 
 <div class="peu">
 <hr>

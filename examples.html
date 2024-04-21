@@ -36,8 +36,86 @@ Tutorial CSS (DAW-llm)
    </li>
 </ul>
 
-<h2></h2><hr>
+<h2>CSS Layout - Float Examples</h2><hr>
 
+<p>This page contains common float examples.</p>
+<h3>Grid of Boxes / Equal Width Boxes</h3>
+
+Example
+<pre>
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .box {
+        float: left;
+        width: 33.33%; /* three boxes (use 25% for four, and 50% for two, etc) */
+        padding: 50px; /* if you want space between the images */
+    }
+
+</pre>
+
+<p>What is box-sizing? You can easily create three floating boxes side by side. However, when you add something that enlarges the width of each box (e.g. padding or borders), the box will break. The box-sizing property allows us to include the padding and border in the box's total width (and height), making sure that the padding stays inside of the box and that it does not break.</p>
+
+<h3>Images Side By Side</h3>
+<p>The grid of boxes can also be used to display images side by side. Example:</p>
+<pre>
+
+    .img-container {
+        float: left;
+        width: 33.33%; /* three containers (use 25% for four, and 50% for two, etc) */
+        padding: 5px; /* if you want space between the images */
+    }
+    
+</pre>
+
+<h3>Equal Height Boxes</h3>
+
+<p>In the previous example, you learned how to float boxes side by side with an equal width. However, it is not easy to create floating boxes with equal heights. A quick fix however, is to set a fixed height, like in the example below:</p>
+<pre>
+
+    .box {
+        height: 500px;
+    }
+
+</pre>
+
+<h3>Navigation Menu</h3>
+
+<p>You can also use float with a list of hyperlinks to create a horizontal menu</p>
+<h3>Web Layout Example</h3>
+
+<p>It is also common to do entire web layouts using the float property</p>
+<pre>
+
+    .header, .footer {
+        background-color: grey;
+        color: white;
+        padding: 15px;
+    }
+
+    .column {
+        float: left;
+        padding: 15px;
+    }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .menu {
+        width: 25%;
+    }
+
+    .content {
+        width: 75%;
+    }
+
+</pre>
+            
 <div class="peu">
 <hr>
 Xavi Blanes 2024 (cc)<br>
