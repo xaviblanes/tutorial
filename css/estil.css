@@ -69,3 +69,5 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+a {padding:30px;}
